@@ -6,11 +6,9 @@ export const usePhotos = () => {
   const [ready, setReady] = useState(false);
 
   const shouldCallAPI = async () => {
-    if (
-      window.innerHeight + window.scrollY >=
-        document.body.offsetHeight - 1000 &&
-      ready
-    ) {
+    const location = window.innerHeight + window.scrollY;
+    const trigger = document.body.offsetHeight - 1000;
+    if (location >= trigger && ready) {
       setReady(false);
       const newPhotos = await loadPexelPhotos();
       setPhotos([...photos, ...newPhotos]);

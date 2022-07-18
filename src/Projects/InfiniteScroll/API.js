@@ -23,7 +23,6 @@ export const getPexelPhotos = async (count = 1) => {
       authorization: process.env.REACT_APP_API_KEY_PEXEL,
     });
     const response = await quote.json();
-    console.log(response);
     return response;
   } catch {
     return [];
