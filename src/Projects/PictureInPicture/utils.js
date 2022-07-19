@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import { Background } from "./styles";
 export const useVideo = () => {
   const selectMediaStream = async () => {
     const videoElement = document.getElementById("video");
@@ -26,8 +25,5 @@ export const useVideo = () => {
     return () => button.removeEventListener("click", selectMediaStream);
   });
 
-  //   useEffect(() => {
-  //     window.addEventListener("load", selectMediaStream);
-  //   });
   return selectMediaStream;
 };
