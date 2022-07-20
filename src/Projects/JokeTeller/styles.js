@@ -49,8 +49,10 @@ export const Button = styled.button`
 export const Title = styled.p`
   font-weight: bold;
   margin: 0 0 2rem 0;
-  font-family: Edu VIC WA NT Beginner;
+  font-family: Lobster;
   font-size: 5rem;
+  color: white;
+  text-shadow: 5px 5px 3px black;
 `;
 
 export const Video = styled.video`
