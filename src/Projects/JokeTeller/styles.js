@@ -6,7 +6,10 @@ export const Background = styled.div`
   background-color: #45badd;
   background-image: url("./robot.gif");
   background-repeat: no-repeat;
-  background-position: left center top;
+  background-position: 0% 0%;
+
+  @media (max-width: 1200px) {
+    background: #45badd; 
 `;
 
 export const Wrapper = styled.div`
