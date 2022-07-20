@@ -42,11 +42,9 @@ const useJokeTeller = () => {
     const recognition = new speech();
 
     if (speechActive) {
-      console.log("stopping speech recognition");
       recognition.stop();
       setSpeech(false);
     } else {
-      console.log("starting speech recognition");
       recognition.start();
       setSpeech(true);
     }
