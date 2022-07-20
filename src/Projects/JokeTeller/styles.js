@@ -3,20 +3,10 @@ import styled from "styled-components";
 export const Background = styled.div`
   min-height: 100vh;
   border: 0.1px solid black;
-  background-size: cover;
-  background: #2980b9; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom right,
-    #ffffff,
-    #6dd5fa,
-    #2980b9
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom right,
-    #ffffff,
-    #6dd5fa,
-    #2980b9
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #45badd;
+  background-image: url("./robot.gif");
+  background-repeat: no-repeat;
+  background-position: left center top;
 `;
 
 export const Wrapper = styled.div`
