@@ -2,7 +2,6 @@ export const get = async (apiURL = "", fallback) => {
   try {
     const quote = await fetch(apiURL);
     const response = await quote.json();
-    console.log({ response, apiURL });
     return response;
   } catch {
     return fallback || undefined;
