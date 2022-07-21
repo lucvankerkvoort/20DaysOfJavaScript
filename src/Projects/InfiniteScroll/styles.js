@@ -5,7 +5,8 @@ export const Photos = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom right, #373b44, #4286f4);
+  background: #4286f4;
+  min-height: 100vh;
 `;
 
 export const Photo = styled.img`

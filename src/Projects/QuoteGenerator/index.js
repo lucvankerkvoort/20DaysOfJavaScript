@@ -22,7 +22,7 @@ const QuoteGenerator = () => {
         setAuthor(data.quoteAuthor);
       })
       .catch((err) => {
-        console.log(err);
+        console.log({ err });
       });
   };
 
@@ -30,8 +30,6 @@ const QuoteGenerator = () => {
     const twitterUrl = `https://twitter.com/intent/tweet?text=${quote.innerText} - ${author.innerText}`;
     window.open(twitterUrl, "_blank");
   };
-
-  console.log(author === undefined);
 
   return (
     <Background>
