@@ -52,11 +52,19 @@ const useJokeTeller = () => {
     recognition.onresult = (e) => {
       const result = e.results[0][0].transcript;
 
-      if (result.includes("random gif")) {
-        loadGif();
-      } else if (result.includes("tell a joke")) {
-        tellAJoke();
+      const answer = (answer) => result.includes(answer);
+
+      switch (answer(result)) {
+        case answer("tell a joke"):
+          tellAJoke();
+          break;
+        case answer("random gif"):
+          loadGif();
+          break;
+        default:
+          console.log({ result });
       }
+
       setSpeech(false);
     };
   };
