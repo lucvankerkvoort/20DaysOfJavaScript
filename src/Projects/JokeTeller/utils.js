@@ -40,6 +40,7 @@ const useJokeTeller = () => {
   const startSpeechRecognition = () => {
     const speech = window.webkitSpeechRecognition;
     const recognition = new speech();
+    recognition.interimResults = false;
 
     if (speechActive) {
       recognition.stop();
@@ -50,13 +51,13 @@ const useJokeTeller = () => {
     }
     recognition.onresult = (e) => {
       const result = e.results[0][0].transcript;
+
       if (result.includes("random gif")) {
         loadGif();
-        setSpeech(false);
       } else if (result.includes("tell a joke")) {
         tellAJoke();
-        setSpeech(false);
       }
+      setSpeech(false);
     };
   };
 
