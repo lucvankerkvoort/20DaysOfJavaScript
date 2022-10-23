@@ -4,6 +4,7 @@ import QuoteGenerator from "./Projects/QuoteGenerator";
 import InfiniteScroll from "./Projects/InfiniteScroll";
 import PictureInPicture from "./Projects/PictureInPicture";
 import JokeTeller from "./Projects/JokeTeller";
+import TicTacToe from "./TicTacToe";
 import "./App.css";
 
 const application = [
@@ -11,6 +12,7 @@ const application = [
   <InfiniteScroll />,
   <PictureInPicture />,
   <JokeTeller />,
+  <TicTacToe />,
 ];
 
 function App() {

@@ -1,0 +1,13 @@
+
+:root{
+    --primary-color: blue;
+    --secondary-color: white;
+}
+
+
+
+[style='DarkTheme']{
+    --primary-color: purple;
+    --secondary-color: black;
+
+}
