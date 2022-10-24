@@ -4,10 +4,12 @@ import QuoteGenerator from "./Projects/QuoteGenerator";
 import InfiniteScroll from "./Projects/InfiniteScroll";
 import PictureInPicture from "./Projects/PictureInPicture";
 import JokeTeller from "./Projects/JokeTeller";
-import TicTacToe from "./TicTacToe";
+import TicTacToe from "./Projects/TicTacToe";
+import DrumKit from "./Projects/DrumKit";
 import "./App.css";
 
 const application = [
+  <DrumKit />,
   <QuoteGenerator />,
   <InfiniteScroll />,
   <PictureInPicture />,
